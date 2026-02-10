@@ -1,0 +1,17 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars:
+   name: "rubia"
+   duration: 140 
+   IS_LIVE: true
+   Topics: 
+     - Linux
+     - shell
+  tasks:
+   - name: print variables
+     ansible.builtin.debug:
+       msg:
+         NAME: {{name}}
+         DURATION: {{duration}} 
+         TOPICS: {{topics}}  
