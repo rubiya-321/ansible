@@ -12,6 +12,6 @@
    - name: print variables
      ansible.builtin.debug:
        msg:
-         NAME: {{name}}
-         DURATION: {{duration}} 
-         TOPICS: {{topics}}  
+         NAME: "{{name}}"
+         DURATION: "{{duration}}"
+         TOPICS: "{{topics}}"  
