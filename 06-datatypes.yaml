@@ -14,4 +14,4 @@
        msg:
          NAME: "{{name}}"
          DURATION: "{{duration}}"
-         TOPICS: "{{topics}}"  
+         TOPICS: "{{Topics}}"  
