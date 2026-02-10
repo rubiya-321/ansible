@@ -1,0 +1,13 @@
+- name: demo on loops
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: loops program
+      ansible.builtin.debug:
+       name: "{{item}}"
+       state: present
+      loop:
+       - linux
+       - mysql
+       - json 
